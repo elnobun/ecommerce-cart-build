@@ -1,3 +1,18 @@
+:root {
+    /* https://www.htmlcsscolor.com/hex/2E71CC */
+    --web-neutral: #f0f2f5;
+    --web-gray: #878787;
+    --web-brand: #2E71CC;
+    --web-success: #2ECC71;
+    --web-danger: #CC2E71;
+    --web-info: #CC712E;
+    --web-royal: #712ECC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +20,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background: var(--web-neutral);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
 }
